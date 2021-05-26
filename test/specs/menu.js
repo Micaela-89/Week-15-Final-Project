@@ -1,4 +1,3 @@
-
 const LoginPage = require('../pageobjects/login.page');
 const menuPage = require('../pageobjects/menu.page');
 const CartPage = require('../pageobjects/cart.page');

@@ -21,5 +21,13 @@
   "directories": {
     "test": "test"
   },
-  "description": ""
+  "description": "'BECOME A QA AUTOMATION'\r Week 15 - FINAL PROJECT\r Automated UI tests based on WebdriverIO framework to test Saucelab's testing webpage.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Micaela-89/Week-15-Final-Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Micaela-89/Week-15-Final-Project/issues"
+  },
+  "homepage": "https://github.com/Micaela-89/Week-15-Final-Project#readme"
 }

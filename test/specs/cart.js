@@ -21,7 +21,7 @@ describe('Continue Shopping button', () => {
     it('Continue Shopping button is enabled and redirect back to inventory page', () => {
         CartPage.open()
         CartPage.contShopBtn.click()
-
+        browser.pause(3000)
         expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html')
     })
 })
@@ -57,4 +57,26 @@ describe('Checkout button', () => {
         browser.pause(3000)
         expect(browser).toHaveUrl('https://www.saucedemo.com/checkout-step-one.html')
     })
+    it('Should allow user to checkout when the cart has at least one item on it', () => {
+        inventoryPage.open()
+        browser.pause(3000)
+        inventoryPage.addBackpack.click()
+        CartPage.shoppingCart.click()
+        expect(browser).toHaveUrl('https://www.saucedemo.com/cart.html')
+        browser.pause(3000)
+        CartPage.checkoutBtn.click()
+        browser.pause(2000)
+        expect(browser).toHaveUrl('https://www.saucedemo.com/checkout-step-one.html')
+        browser.pause(2000)
+    })
+    it('Should not allow user to checkout when the cart is empty', () => {
+        inventoryPage.open()
+        inventoryPage.removeBackpack.click()
+        CartPage.shoppingCart.click()
+        browser.pause(3000)
+        CartPage.checkoutBtn.click()
+        expect(browser).toHaveUrl('https://www.saucedemo.com/checkout-step-one.html')
+        browser.pause(2000)
+    })
+    //THIS LAST TEST SHOULD NOT PASS. USER IS REDIRECTED TO "CHECKOUT" EVEN THOUGH THE CART IS EMPTY.
 })
