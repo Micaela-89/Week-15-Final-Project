@@ -1,10 +1,11 @@
 # 'BECOME A QA AUTOMATION' - Week 15 - Final Project.
 
-This project consists of automated UI tests based on WebdriverIO framework for Saucelab's testing webpage. (https://www.saucedemo.com/)
+This project consists of automated UI tests based on WebdriverIO framework for [Saucelab's testing webpage](https://www.saucedemo.com/).
+
 
 ## Technology stack
-* Node.js (At least version 12 is necessary -  Node.js/docs )
-* WebDriver IO (WebDriverIO/docs)
+* [Node.js](https://nodejs.org/es/docs/) (At least version 12 is necessary)
+* [WebdriverIO](https://webdriver.io/)
 * Visual Studio Code (or other code editor is necessary)
 * Google chrome (preferred)
 
